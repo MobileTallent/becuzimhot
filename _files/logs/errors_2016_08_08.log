@@ -1,0 +1,56 @@
+2016-08-08 05:46:10
+Error: E_WARNING
+URL: http://172.16.1.249/dating_site/
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php
+Line: 1038
+Message: unpack(): Type C: not enough input, need 1, have 0
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1038)
+Function: unpack
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 988)
+Class: IpInfo
+Function: readByte
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1066)
+Class: IpInfo
+Function: readString
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1578)
+Class: IpInfo
+Function: readCountryNameAndCode
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 576)
+Class: IpInfo
+Function: lookup
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 606)
+Class: IP
+Function: geoInfo
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 1104)
+Class: IP
+Function: geoInfoCity
+
+File: C:\wamp\www\dating_site\_include\current\cheader.class.php (Line: 106)
+Function: getDemoCapitalCountry
+
+File: C:\wamp\www\dating_site\index.php (Line: 487)
+Class: CHeader
+Function: showMap
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 224)
+Class: CIndex
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\index.php (Line: 641)
+Function: include
+
+---------
+

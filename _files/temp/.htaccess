@@ -1,0 +1,14 @@
+RemoveHandler .html .htm
+AddType text/html .html .htm
+
+<Limit GET POST PUT>
+Order Allow,Deny
+Deny from All
+</Limit>
+
+<filesMatch "face_city_(.*)\.jpg$">
+    <Limit GET POST PUT>
+    Order Allow,Deny
+    Allow from All
+    </Limit>
+</filesMatch>

@@ -1,0 +1,31 @@
+2016-05-29 05:16:33
+Error: E_USER_NOTICE
+URL: http://becuzimhot.com/search_results.php?display=profile
+File: I:\becuzimhot_com\_include\lib\db_common.php
+Line: 46
+Message: Can't execute query: Duplicate entry '2016-05-29-0' for key 'PRIMARY'
+INSERT INTO stats SET date='2016-05-29', user_search_used=1
+
+Call stack:
+
+File: I:\becuzimhot_com\_include\lib\db_common.php (Line: 46)
+Function: trigger_error
+
+File: I:\becuzimhot_com\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: I:\becuzimhot_com\_include\lib\db_common.php (Line: 108)
+Class: DB
+Function: driver_query
+
+File: I:\becuzimhot_com\_include\current\cstatstools.class.php (Line: 169)
+Class: DB_Common
+Function: execute
+
+File: I:\becuzimhot_com\search_results.php (Line: 21)
+Class: CStatsTools
+Function: count
+
+---------
+

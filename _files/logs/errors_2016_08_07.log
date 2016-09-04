@@ -1,0 +1,112 @@
+2016-08-07 09:48:24
+Error: E_WARNING
+URL: http://localhost/dating_site/search_results.php?display=profile&uid=101473&ref=people_nearby
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php
+Line: 129
+Message: fsockopen(): unable to connect to 127.0.0.1:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 129)
+Function: fsockopen
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 145)
+Class: Smtp
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 91)
+Class: Smtp
+Function: send
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 46)
+Function: send_mail_smtp
+
+File: C:\wamp\www\dating_site\_include\current\common.class.php (Line: 291)
+Function: send_mail
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 1293)
+Class: Common
+Function: sendAutomail
+
+File: C:\wamp\www\dating_site\_include\lib\list.php (Line: 252)
+Class: CUsersProfile
+Function: onItem
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 852)
+Class: CHtmlList
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 235)
+Class: CUsers
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\search_results.php (Line: 845)
+Function: include
+
+---------
+
+2016-08-07 09:48:36
+Error: E_WARNING
+URL: http://localhost/dating_site/search_results.php?display=profile&uid=101473&ref=people_nearby
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php
+Line: 129
+Message: fsockopen(): unable to connect to 127.0.0.1:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 129)
+Function: fsockopen
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 145)
+Class: Smtp
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 91)
+Class: Smtp
+Function: send
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 46)
+Function: send_mail_smtp
+
+File: C:\wamp\www\dating_site\_include\current\common.class.php (Line: 291)
+Function: send_mail
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 1293)
+Class: Common
+Function: sendAutomail
+
+File: C:\wamp\www\dating_site\_include\lib\list.php (Line: 252)
+Class: CUsersProfile
+Function: onItem
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 852)
+Class: CHtmlList
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 235)
+Class: CUsers
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\search_results.php (Line: 845)
+Function: include
+
+---------
+

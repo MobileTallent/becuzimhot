@@ -1,0 +1,180 @@
+2016-07-12 11:03:16
+Error: E_WARNING
+URL: http://localhost/dating_site/_server/update_server_ajax.php
+File: C:\wamp\www\dating_site\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: C:\wamp\www\dating_site\_include\lib\db_common.php (Line: 59)
+Class: DB
+Function: driver_connect
+
+File: C:\wamp\www\dating_site\_include\core\start.php (Line: 280)
+Class: DB_Common
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\core\main_start.php (Line: 12)
+Function: include
+
+File: C:\wamp\www\dating_site\_server\update_server_ajax.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [user_current] => 0
+    [counter_all] => 0
+    [is_visible_messages] => false
+    [is_visible_page] => false
+    [last_id] => 0
+    [last_new_msg_id] => 0
+    [is_mode_fb] => true
+    [timeout_server] => 15
+    [page] => profile_view.php
+    [last_gift] => 0
+    [request_user_id] => 100008
+)
+
+---------
+
+2016-07-12 11:07:50
+Error: E_WARNING
+URL: http:///dating_site/_server/update_server_ajax.php
+File: C:\wamp\www\dating_site\_include\lib\session.php
+Line: 26
+Message: session_start(): Cannot send session cookie - headers already sent by (output started at C:\wamp\www\dating_site\_include\core\start.php:28)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\lib\session.php (Line: 26)
+Function: session_start
+
+File: C:\wamp\www\dating_site\_include\core\start.php (Line: 151)
+Function: include_once
+
+File: C:\wamp\www\dating_site\_include\core\main_start.php (Line: 12)
+Function: include
+
+File: C:\wamp\www\dating_site\_server\update_server_ajax.php (Line: 11)
+Function: include
+
+---------
+
+2016-07-12 15:32:22
+Error: E_WARNING
+URL: http://localhost/dating_site/search_results.php?display=profile&uid=101473
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php
+Line: 129
+Message: fsockopen(): unable to connect to 127.0.0.1:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 129)
+Function: fsockopen
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 145)
+Class: Smtp
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 91)
+Class: Smtp
+Function: send
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 46)
+Function: send_mail_smtp
+
+File: C:\wamp\www\dating_site\_include\current\common.class.php (Line: 291)
+Function: send_mail
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 1293)
+Class: Common
+Function: sendAutomail
+
+File: C:\wamp\www\dating_site\_include\lib\list.php (Line: 252)
+Class: CUsersProfile
+Function: onItem
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 852)
+Class: CHtmlList
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 235)
+Class: CUsers
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\search_results.php (Line: 845)
+Function: include
+
+---------
+
+2016-07-12 15:32:50
+Error: E_WARNING
+URL: http://localhost/dating_site/search_results.php?display=profile&uid=101473
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php
+Line: 129
+Message: fsockopen(): unable to connect to 127.0.0.1:25 (No connection could be made because the target machine actively refused it.
+)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 129)
+Function: fsockopen
+
+File: C:\wamp\www\dating_site\_include\current\smtp.class.php (Line: 145)
+Class: Smtp
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 91)
+Class: Smtp
+Function: send
+
+File: C:\wamp\www\dating_site\_include\lib\mail.php (Line: 46)
+Function: send_mail_smtp
+
+File: C:\wamp\www\dating_site\_include\current\common.class.php (Line: 291)
+Function: send_mail
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 1293)
+Class: Common
+Function: sendAutomail
+
+File: C:\wamp\www\dating_site\_include\lib\list.php (Line: 252)
+Class: CUsersProfile
+Function: onItem
+
+File: C:\wamp\www\dating_site\_include\current\users.php (Line: 852)
+Class: CHtmlList
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 235)
+Class: CUsers
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\search_results.php (Line: 845)
+Function: include
+
+---------
+

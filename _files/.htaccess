@@ -1,0 +1,2 @@
+RemoveHandler .html .htm .php
+AddType text/html .html .htm .php

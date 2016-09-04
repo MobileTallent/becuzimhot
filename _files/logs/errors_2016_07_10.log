@@ -1,0 +1,96 @@
+2016-07-10 14:46:38
+Error: E_WARNING
+URL: http://localhost/dating_site/
+File: C:\wamp\www\dating_site\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'becuzimhot_com'@'localhost' (using password: YES)
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: C:\wamp\www\dating_site\_include\lib\db_common.php (Line: 59)
+Class: DB
+Function: driver_connect
+
+File: C:\wamp\www\dating_site\_include\core\start.php (Line: 280)
+Class: DB_Common
+Function: connect
+
+File: C:\wamp\www\dating_site\_include\core\main_start.php (Line: 12)
+Function: include
+
+File: C:\wamp\www\dating_site\index.php (Line: 16)
+Function: include
+
+---------
+
+2016-07-10 17:01:59
+Error: E_WARNING
+URL: http://localhost/dating_site/search_results.php
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php
+Line: 1038
+Message: unpack(): Type C: not enough input, need 1, have 0
+
+Call stack:
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1038)
+Function: unpack
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 988)
+Class: IpInfo
+Function: readByte
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1066)
+Class: IpInfo
+Function: readString
+
+File: C:\wamp\www\dating_site\_include\current\ipinfo.class.php (Line: 1578)
+Class: IpInfo
+Function: readCountryNameAndCode
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 576)
+Class: IpInfo
+Function: lookup
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 606)
+Class: IP
+Function: geoInfo
+
+File: C:\wamp\www\dating_site\_include\core\x.php (Line: 1104)
+Class: IP
+Function: geoInfoCity
+
+File: C:\wamp\www\dating_site\_include\current\usersfilter.class.php (Line: 108)
+Function: getDemoCapitalCountry
+
+File: C:\wamp\www\dating_site\_include\current\usersfilter.class.php (Line: 65)
+Class: UsersFilter
+Function: location
+
+File: C:\wamp\www\dating_site\_include\current\usersfilter.class.php (Line: 257)
+Class: UsersFilter
+Function: getLocation
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 235)
+Class: UsersFilter
+Function: parseBlock
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\lib\block.php (Line: 218)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\_include\core\main_close.php (Line: 19)
+Class: CHtmlBlock
+Function: parse
+
+File: C:\wamp\www\dating_site\search_results.php (Line: 845)
+Function: include
+
+---------
+
